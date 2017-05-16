@@ -23,7 +23,7 @@ public class PersonDaoTest {
 
         // 4. 准备基本信息
         // 4.1) statement: 用来定位映射文件（PersonMapper.xml）中的语句（通过namespace id + select id)
-        String statement = "com.xiya.dao.PersonDao.getPersonById";
+        String statement = "com.xiya.dao.PersonMapper.getPersonById";
         // 4.2) parameter: 传进去的参数，也就是需要获取students表中主键值为1的记录
         int parameter = 1;
         // 5. SqlSession 实例来直接执行已映射的 SQL 语句，selectOne表示获取的是一条记录

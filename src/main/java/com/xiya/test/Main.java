@@ -1,6 +1,6 @@
 package com.xiya.test;
 
-import com.xiya.dao.PersonDao;
+import com.xiya.dao.PersonMapper;
 import com.xiya.entity.Person;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -33,7 +33,7 @@ public class Main {
     public static void main(String[] args) {
 
         SqlSession sqlSession= getSession();
-        PersonDao personMapper = sqlSession.getMapper(PersonDao.class);
+        PersonMapper personMapper = sqlSession.getMapper(PersonMapper.class);
 
 
         //增加
